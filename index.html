@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=".">My Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#growth-of-open-source">Growth of open source</a></li>
+            <li><a href="#open-source-security-factors-to-be-considered">Open source security – factors to be considered</a></li>
+        <li class="main "><a href="#be-secure">Be-Secure</a></li>
+            <li><a href="#open-source-security-tech-stacks">Open source Security tech stacks:</a></li>
+            <li><a href="#besman-environments">BeSman environments:</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="growth-of-open-source">Growth of open source</h1>
+<p>Over a decade ago, open source often resonated with communities and their specific projects. Fast forward today, open source is prominent in the IT landscape. Many organizations have started to realize the benefits of open source and have started to adopt it. </p>
+<p>Today it is part of enterprise IT strategy and drive enterprise transformational initiatives. Innovation is a necessity for business, open source is equipped to help organizations to be innovative. Today open source is part of almost any industry sector and is showing growing trend of adoption among the industry peers.</p>
+<p>Open source is offering lot of benefits for organization, some of them are</p>
+<ul>
+<li>
+<p>Enabling innovation at pace</p>
+</li>
+<li>
+<p>Focuses on enhancing developer productivity as developers need not develop everything from grounds up</p>
+</li>
+<li>
+<p>The ability for developers to upskill through contribution in various open source community initiatives 
+    thus resulting in drawing best talent towards the organization</p>
+</li>
+<li>
+<p>Enabling organizations to gain visibility among peers in the industry as an open source contributor.</p>
+</li>
+</ul>
+<h2 id="open-source-security-factors-to-be-considered"><strong>Open source security – factors to be considered</strong></h2>
+<p>As the open source adoption increases, the footprint of open source technology in the IT landscape increases. A typical open source tech stack based application will consists of internally developed code plus code components sourced from external open source code repositories as well as external binary dependencies consumed during build process.</p>
+<p>All code components may have inherent security vulnerabilities that should be identified and remediated before consuming them. Without formal security policies and controls in place, consuming any open source software component would raise the security risks for the organization. Thus, it is essential to factor in security for open source adoption.</p>
+<p>Key factors to be addressed to secure open source</p>
+<blockquote>
+<p><strong>Absence of security control regime</strong></p>
+<p><strong>Lack of clarity of dependencies</strong></p>
+<p><strong>Unattended inherent vulnerabilities</strong> </p>
+<p><strong>Limited visibility on open source assets – higher security risks</strong></p>
+</blockquote>
+<pre><code>Absence of security control regime:
+</code></pre>
+<p>Many organizations don’t have sufficient security policies for consuming open source 
+code components or assessing the changes in open source code components for security. 
+Such lapses in policies, processes and procedures often increases the security threats 
+for organization.</p>
+<pre><code>Lack of clarity of dependencies:
+</code></pre>
+<p>There are two types of dependencies – internal and external. Most organization employing 
+version control mechanism can maintain a tab on internal dependencies. This is not the 
+case for external dependencies. The external components are consumed as is without any 
+security assessment, This is a very risky approach impacting threat exposure of applications 
+consuming such external dependencies.</p>
+<pre><code>Unattended inherent vulnerabilities:
+</code></pre>
+<p>Many at times, open source code components are consumed due to lack of awareness on the
+security essentials for open source. The inherent vulnerabilities in these consumed 
+components makes its way into the application and increases its threat exposure. Every 
+code component should be subjected to security assessment. No code component can be deemed 
+secured until it is assessed.</p>
+<pre><code>Limited visibility on open source assets – higher security risks:
+</code></pre>
+<p>IT landscape is increasing year on year in every organizations to align with their business 
+requirements. All assets need not be in the same level as many undergo changes at varying pace. 
+Lack of clarity on assets is one of the major reasons for security issues. Open Source software 
+undergo frequent changes. These changes need to be assessed for security issues and confirmed whether 
+it can be consumed. Newer changes at times also address some of the known vulnerabilities thus it is 
+essential to track and assess these changes. This is effort intensive activity and quite often this is 
+overlooked thus impacting the organization’s overall security posture.</p>
+<h1 id="be-secure">Be-Secure</h1>
+<p>Be-Secure is an umbrella of security projects and utilities. These security projects and utilities are for everyone who is focused on securing their open source projects or contribute to open source projects with a focus on security.  Securing open source projects is now a joint responsibility of contributors and consumers of these projects. Be-Secure will enable you to achieve this in a seamless manner.</p>
+<ul>
+<li>
+<p><em>Vision</em> : Enable individuals to secure their open source initiatives by equipping with the required security tools and utilities.</p>
+</li>
+<li>
+<p><em>Goal</em>   : Build an open source security community offering support to enhance security posture of open source initiatives.</p>
+</li>
+</ul>
+<h3 id="open-source-security-tech-stacks">Open source Security tech stacks:</h3>
+<p>We have grouped various open source technologies into 5 main categories. By doing so, it will help us to device appropriate security measures and processes to enhance the security of these open source tech stacks.</p>
+<p>We should be able to accommodate almost all the existing open source technologies in any one of the 5 categories. The categories are defined based on the common characteristics and usage of the respective open source technologies.</p>
+<p><img alt="alt text" src="img/techstack.PNG" /></p>
+<p>Be-Secure Projects/ Utility:</p>
+<ul>
+<li>BeSman: a command-line utility to provision customized security environments for an open source security tech stack to address the specific security requirements of the end user.</li>
+</ul>
+<p>By securing our open source projects, we will be able to help downstream consumers of our projects to secure their application else it will add overhead for them.</p>
+<p>Given the rate of open source adoption it is essential that we focus on security of what we consume and what we build as part of open source initiative. BeSman utility will help everyone to address this requirement effectively.</p>
+<p>BeSman dev environments will be preconfigured for an open source project along with tools that will enable any developer to commence with their development activity. Similarly, the BeSman sec environment will be preconfigured with open source security tools customized to perform security assessment of an open source project.</p>
+<h2 id="besman-environments">BeSman environments:</h2>
+<table>
+<thead>
+<tr>
+<th>Open Source Security stack</th>
+<th>Sub Category</th>
+<th>Sl.No</th>
+<th>BeSman Env name</th>
+<th>Description</th>
+<th>Entities prebundled in the BeSman Env (mandatory)</th>
+<th>Entities that can be included in the BeSman Env (optional)</th>
+<th>Development Tools (IDE)</th>
+<th>Dependencies</th>
+<th>Status</th>
+<th>Security Risk Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DevOps Tool Security</td>
+<td>Ansible</td>
+<td>1</td>
+<td>bes-ansibledev-env</td>
+<td>Secure BeSman environment for Ansible development</td>
+<td>Git<br/>Python<br/>Ansible-galaxy<br/>pypi<br/>VSCode<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode</td>
+<td>Python, Ruby, bash, ansible-galaxy</td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>2</td>
+<td>bes-ansiblesec-env</td>
+<td>Secure  BeSman environment for Ansible security testing</td>
+<td>Java<br/>Jenkins<br/>Python<br/>Ansible-galaxy<br/>pypi<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Chef</td>
+<td>3</td>
+<td>bes-chefdev-env</td>
+<td>Secure BeSman environment for chef development</td>
+<td>Git<br/>RVM (Ruby package manager)<br/>Ruby<br/>Erlang<br/>VSCode<br/>ChefSpec<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode,RubyMine</td>
+<td>Ruby (client) and Ruby / Erlang (server)</td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>4</td>
+<td>bes-chefsec-env</td>
+<td>Secure  BeSman environment for Chef security testing</td>
+<td>Git<br/>RVM (Ruby package manager)<br/>Ruby<br/>Erlang<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env</td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Puppet</td>
+<td>5</td>
+<td>bes-puppetdev-env</td>
+<td>Secure BeSman environment for Puppet development</td>
+<td>Git<br/>RVM (Ruby package manager)<br/>Ruby<br/>C++<br/>Clojure<br/>VSCode<br/>Puppet Development Kit<br/>Jenkins<br/></td>
+<td></td>
+<td>RubyMine,VSCode</td>
+<td>C++ &amp; Clojure from 4.0,[2] Ruby</td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>6</td>
+<td>bes-puppetsec-env</td>
+<td>Secure  BeSman environment for Puppet security testing</td>
+<td>Git<br/>RVM (Ruby package manager)<br/>Ruby<br/>C++<br/>Clojure<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Docker</td>
+<td>7</td>
+<td>bes-dockerdev-env</td>
+<td>Secure BeSman environment for Docker development</td>
+<td>Git<br/>Go<br/>VSCode<br/>Docker Compose<br/>Go test<br/>Jenkins<br/><br/></td>
+<td></td>
+<td>VSCode, GoLand</td>
+<td>Go</td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>8</td>
+<td>bes-dockersec-env</td>
+<td>Secure  BeSman environment for Docker security testing</td>
+<td>Git<br/>Go<br/>Docker Compose<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Kubernetes</td>
+<td>9</td>
+<td>bes-kubernetesdev-env</td>
+<td>Secure BeSman environment for kubernetes development</td>
+<td>Git<br/>Go<br/>VSCode<br/>Go test<br/>Jenkins<br/><br/></td>
+<td></td>
+<td>VSCode, GoLand</td>
+<td>Go</td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>10</td>
+<td>bes-kubernetessec-env</td>
+<td>Secure  BeSman environment for  Kubernetes security testing</td>
+<td>Git<br/>Go<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>OpenShift</td>
+<td>11</td>
+<td>bes-openshiftdev-env</td>
+<td>Secure BeSman environment for openshift development</td>
+<td>Git<br/>Go<br/>VSCode<br/>Go test<br/>Jenkins<br/><br/></td>
+<td></td>
+<td>Vscode</td>
+<td>GO, Angular JS</td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>12</td>
+<td>bes-openshiftsec-env</td>
+<td>Secure  BeSman environment for  OpenShift security testing</td>
+<td>Git<br/>Go<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Language and Framework security</td>
+<td>Python-Django</td>
+<td>13</td>
+<td>bes-pythonDjangodev-env</td>
+<td>Secure BeSman environment for Python-Django development</td>
+<td>Git<br/>Python<br/>Pypi<br/>VSCode<br/>pytest<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>14</td>
+<td>bes-pythonDjangosec-env</td>
+<td>Secure  BeSman environment for  Python-Django security testing</td>
+<td>Git<br/>Python<br/>Pypi<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Java-Spring</td>
+<td>15</td>
+<td>bes-javaSpringdev-env</td>
+<td>Secure BeSman environment for java-Spring development</td>
+<td>Git<br/>openJDK<br/>VSCode<br/>JUnit<br/>Apache Maven<br/>Selenium<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode, Eclipse</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>16</td>
+<td>bes-javaSpringsec-env</td>
+<td>Secure  BeSman environment for  Java-Spring security testing</td>
+<td>Git<br/>openJDK<br/>Apache Maven<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>PHP-Symfony</td>
+<td>17</td>
+<td>bes-phpSymfongdev-env</td>
+<td>Secure BeSman environment for PHP-Symfony development</td>
+<td>Git<br/>PHP<br/>Apache<br/>VSCode<br/>PHPUnit<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>18</td>
+<td>bes-phpSymfongsec-env</td>
+<td>Secure  BeSman environment for  PHP-Symfony security testing</td>
+<td>Git<br/>PHP<br/>Apache<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Ruby-Rails</td>
+<td>19</td>
+<td>bes-rubyRailsdev-env</td>
+<td>Secure BeSman environment for Ruby-Rails development</td>
+<td>Git<br/>RVM (Ruby package manager)<br/>Ruby<br/>Erlang<br/>VSCode<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>20</td>
+<td>bes-rubyRailssec-env</td>
+<td>Secure  BeSman environment for  Ruby-Rail security testing</td>
+<td>Git<br/>RVM (Ruby package manager)<br/>Ruby<br/>Erlang<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>NodeJS</td>
+<td>21</td>
+<td>bes-nodejsdev-env</td>
+<td>Secure BeSman environment for NodeJS development</td>
+<td>Git<br/>NodeJS<br/>NPM<br/>VSCode<br/>esLint<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>22</td>
+<td>bes-nodejssec-env</td>
+<td>Secure  BeSman environment for  NodeJS security testing</td>
+<td>Git<br/>NodeJS<br/>NPM<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>GO</td>
+<td>23</td>
+<td>bes-godev-env</td>
+<td>Secure BeSman environment for GO development</td>
+<td>Git<br/>Go<br/>VSCode<br/>Go test<br/>Jenkins<br/><br/></td>
+<td></td>
+<td>VSCode, GoLand</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>24</td>
+<td>bes-gosec-env</td>
+<td>Secure  BeSman environment for  GO security testing</td>
+<td>Git<br/>Go<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Kotlin</td>
+<td>25</td>
+<td>bes-kotlindev-env</td>
+<td>Secure BeSman environment for Kotlin development</td>
+<td>Git<br/>OpenJDK<br/>Kotlin<br/>VSCode<br/>Selenium<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>26</td>
+<td>bes-kotlinsec-env</td>
+<td>Secure  BeSman environment for  Kotlin security testing</td>
+<td>Git<br/>OpenJDK<br/>Kotlin<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env</td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>C</td>
+<td>27</td>
+<td>bes-cdev-env</td>
+<td>Secure BeSman environment for C development</td>
+<td>TBD</td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>28</td>
+<td>bes-csec-env</td>
+<td>Secure  BeSman environment for  C security testing</td>
+<td>TBD</td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>JavaScript - ReactJS</td>
+<td>29</td>
+<td>bes-javascriptReactdev-env</td>
+<td>Secure BeSman environment for JavaScript-ReactJS development</td>
+<td>Git<br/>NodeJS<br/>NPM<br/>VSCode<br/>esLint<br/>create-react-app<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode</td>
+<td>NodeJS, npm, create-react-app</td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>30</td>
+<td>bes-javascriptReactsec-env</td>
+<td>Secure  BeSman environment for  JavaScript -ReactJS security testing</td>
+<td>Git<br/>NodeJS<br/>NPM<br/>create-react-app<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>CoffeeScript</td>
+<td>31</td>
+<td>bes-coffeescriptdev-env</td>
+<td>Secure BeSman environment for CoffeeScript development</td>
+<td>Git<br/>NodeJS<br/>NPM<br/>CoffeeScript<br/>VSCode<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>32</td>
+<td>bes-coffeescriptsec-env</td>
+<td>Secure  BeSman environment for  CoffeeScript security testing</td>
+<td>Git<br/>NodeJS<br/>NPM<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>TypeScript</td>
+<td>33</td>
+<td>bes-typescriptdev-env</td>
+<td>Secure BeSman environment for TypeScript development</td>
+<td>Git<br/>NPM<br/>TypeScript<br/>webpack<br/>VSCode<br/>Jenkins<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>34</td>
+<td>bes-typescriptsec-env</td>
+<td>Secure  BeSman environment for  TypeScript security testing</td>
+<td>Git<br/>NPM<br/>TypeScript<br/>webpack<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Application security</td>
+<td>Drupal</td>
+<td>35</td>
+<td>bes-drupaldev-env</td>
+<td>Secure BeSman environment for Drupal development</td>
+<td>TBD</td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>36</td>
+<td>bes-drupalsec-env</td>
+<td>Secure  BeSman environment for  Drupal security testing</td>
+<td>TBD<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/>bes-apisec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Odoo</td>
+<td>37</td>
+<td>bes-odoodev-env</td>
+<td>Secure BeSman environment for Odoo development</td>
+<td>TBD</td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>38</td>
+<td>bes-odoosec-env</td>
+<td>Secure  BeSman environment for  Odoo security testing</td>
+<td>TBD<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/>bes-apisec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Magento</td>
+<td>39</td>
+<td>bes-magentodev-env</td>
+<td>Secure BeSman environment for Magento development</td>
+<td>TBD</td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>40</td>
+<td>bes-magentosec-env</td>
+<td>Secure  BeSman environment for  Magento security testing</td>
+<td>TBD<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/>bes-apisec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>WordPress</td>
+<td>41</td>
+<td>bes-wordpressdev-env</td>
+<td>Secure BeSman environment for WordPress development</td>
+<td>TBD</td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>42</td>
+<td>bes-wordpresssec-env</td>
+<td>Secure  BeSman environment for  WordPress security testing</td>
+<td>TBD<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/>bes-apisec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Distributed Application or Blockchain Security</td>
+<td>Hyperledger Indy</td>
+<td>43</td>
+<td>bes-hyperledgerIndydev-env</td>
+<td>Secure BeSman environment for Hyperledger Indy development</td>
+<td>Git<br/>Python<br/>pypi<br/>VSCode<br/>Indy-node<br/>Indy-sdk (libindy, libindy-crypto, libsodium)<br/>Jenkins<br/><br/></td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>44</td>
+<td>bes-hyperledgerIndysec-env</td>
+<td>Secure  BeSman environment for  Hyperledger Indy security testing</td>
+<td>Git<br/>Python<br/>pypi<br/>Indy-node<br/>Indy-sdk (libindy, libindy-crypto, libsodium)<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/>bes-securityscansec-env<br/>bes-mobileappsec-env<br/>bes-apisec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Hyperledger Fabric</td>
+<td>45</td>
+<td>bes-hyperledgerFabricdev-env</td>
+<td>Secure BeSman environment for Hyperledger Fabric development</td>
+<td>Git<br/>Go<br/>NodeJS<br/>NPM<br/>Docker<br/>Docker Compose<br/>VSCode<br/>Jenkins<br/></td>
+<td></td>
+<td>VSCode, GoLand</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>46</td>
+<td>bes-hyperledgerFabricsec-env</td>
+<td>Secure  BeSman environment for  Hyperledger Fabric security testing</td>
+<td>Git<br/>Go<br/>NodeJS<br/>NPM<br/>Docker<br/>Docker Compose<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/>bes-securityscansec-env<br/>bes-mobileappsec-env<br/>bes-apisec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Hyperledger Sawtooth</td>
+<td>47</td>
+<td>bes-hyperledgerSawtoothdev-env</td>
+<td>Secure BeSman environment for Hyperledger Sawtooth development</td>
+<td>Git<br/>Sawtooth<br/>Sawtooth Devmode engine <br/>VSCode<br/></td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>48</td>
+<td>bes-hyperledgerSawtoothsec-env</td>
+<td>Secure  BeSman environment for  Hyperledger Sawtooth security testing</td>
+<td>Git<br/>Sawtooth<br/>Sawtooth Devmode engine <br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/>bes-securityscansec-env<br/>bes-mobileappsec-env<br/>bes-apisec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Hyperledger Cello</td>
+<td>49</td>
+<td>bes-hyperledgerCellodev-env</td>
+<td>Secure BeSman environment for Hyperledger Cello development</td>
+<td>TBD</td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>50</td>
+<td>bes-hyperledgerCellosec-env</td>
+<td>Secure  BeSman environment for  Hyperledger Cello security testing</td>
+<td>TBD<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Hyperledger Caliper</td>
+<td>51</td>
+<td>bes-hyperledgerCaliperdev-env</td>
+<td>Secure BeSman environment for Hyperledger Caliper development</td>
+<td>TBD</td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>52</td>
+<td>bes-hyperledgerCalipersec-env</td>
+<td>Secure  BeSman environment for  Hyperledger Caliper  security testing</td>
+<td>TBD<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>R3</td>
+<td>53</td>
+<td>bes-r3dev-env</td>
+<td>Secure BeSman environment for R3 development</td>
+<td>TBD</td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>54</td>
+<td>bes-r3sec-env</td>
+<td>Secure  BeSman environment for  R3 security testing</td>
+<td>TBD<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/>bes-securityscansec-env<br/>bes-mobileappsec-env<br/>bes-apisec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>KOBman</td>
+<td>55</td>
+<td>bes-kobmandev-env</td>
+<td>Secure BeSman environment for KOBman development</td>
+<td>Git<br/>Curl<br/>VSCode</td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>56</td>
+<td>bes-kobmansec-env</td>
+<td>Secure  BeSman environment for  KOBman security testing</td>
+<td>Git<br/>Curl<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/>bes-securityscansec-env<br/>bes-mobileappsec-env<br/>bes-apisec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Ethereum</td>
+<td>57</td>
+<td>bes-ethereumdev-env</td>
+<td>Secure BeSman environment for Ethereum development</td>
+<td>TBD</td>
+<td></td>
+<td>VSCode</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>58</td>
+<td>bes-ethereumsec-env</td>
+<td>Secure  BeSman environment for  Ethereum security testing</td>
+<td>TBD<br/>bes-appsastsec-env<br/>bes-appdastsec-env<br/>bes-pensec-env<br/>bes-securityscansec-env<br/>bes-mobileappsec-env<br/>bes-apisec-env<br/></td>
+<td></td>
+<td>NA</td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Open Source Security Tool Security</td>
+<td>Application Security Testing (SAST )</td>
+<td>59</td>
+<td>bes-appsastsec-env</td>
+<td>Secure BeSman environment for application static security testing</td>
+<td>SAST - LGTM / Sonarqube / Semgrep / brakeman / Gosec / Kubestriker / OpenVAS / Vega / Grabber<br/></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Application Security Testing (DAST)</td>
+<td>60</td>
+<td>bes-appdastsec-env</td>
+<td>Secure BeSman environment for application dynamic security testing</td>
+<td>DAST - ZAP / GoLismero / Metasploit / Burp Suite CE</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Penetration Testing</td>
+<td>61</td>
+<td>bes-pensec-env</td>
+<td>Secure BeSman environment for penetration testing</td>
+<td>Kali Linux / Parrot Sec</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Security  Scanning ( network security)</td>
+<td>62</td>
+<td>bes-securityscansec-env</td>
+<td>Secure BeSman environment for security scanning</td>
+<td>Nmap / Wireshark / Snort / Ettercap / Nagios</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>Mobile Application Security Testing</td>
+<td>63</td>
+<td>bes-mobileappsec-env</td>
+<td>Secure BeSman environment for mobile application security testing</td>
+<td>ZAP / QARK ( applicable only for Android) / Drozer /  Mobile Security Framework (MobSF)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Requirement gathering and analysis</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td></td>
+<td>API Security Testing</td>
+<td>64</td>
+<td>bes-apisec-env</td>
+<td>Secure BeSman environment for API security testing</td>
+<td>Postman / crAPI / Astra</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="current-sdlc-life-cycle">Current SDLC life cycle</h3>
+<p>TBD</p>
+<h3 id="devsecops-sdlc-life-cycle-with-tools-secured-using-besman-environments">DevSecOps SDLC life cycle with tools secured using BeSman environments</h3>
+<p>TBD</p>
+<h3 id="how-to-contribute-to-this-project">How to contribute to this project</h3>
+<p>TBD</p>
+<h3 id="checklist-to-be-followed">Checklist to be followed</h3>
+<p>TBD</p>
+<h3 id="how-to-raise-issues-to-this-project">How to raise issues to this project</h3>
+<p>TBD</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2021-06-15 15:00:20
+-->
